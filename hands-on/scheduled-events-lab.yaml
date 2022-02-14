@@ -29,7 +29,7 @@ Resources:
   singleConfig:
     Type: AWS::AutoScaling::LaunchConfiguration
     Properties:
-      ImageId: ami-02354e95b39ca8dec
+      ImageId: ami-033b95fb8079dc481 # Latest AML2 AMI
       SecurityGroups:
         - Ref: logicalName
         - myExistingEC2SecurityGroup
