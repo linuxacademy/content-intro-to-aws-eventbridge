@@ -1,0 +1,1 @@
+"<event> event received for Autoscaling Group <asg_name> by user ARN <user>. Group was set to Desired Capacity of <capacity>."

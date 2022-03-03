@@ -1,0 +1,31 @@
+{
+  "version": "0",
+  "id": "221c395d-9098-6246-1382-3d0a8806114e",
+  "detail-type": "EC2 Instance Terminate Successful",
+  "source": "aws.autoscaling",
+  "account": "123456789101",
+  "time": "2022-03-03T17:30:28Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:autoscaling:us-east-1:123456789101:autoScalingGroup:9cd982ea-3be5-46bf-875a-d12779917466:autoScalingGroupName/DevelopmentAutoScalingGroup",
+    "arn:aws:ec2:us-east-1:123456789101:instance/i-07f16a9d8ea5d2c54"
+  ],
+  "detail": {
+    "Origin": "AutoScalingGroup",
+    "Destination": "EC2",
+    "Description": "Terminating EC2 instance: i-07f16a9d8ea5d2c54",
+    "EndTime": "2022-03-03T17:30:28.321Z",
+    "RequestId": "b1e2cf34-ed16-4a8f-96b2-523819382f06",
+    "ActivityId": "b1e2cf34-ed16-4a8f-96b2-523819382f06",
+    "StartTime": "2022-03-03T17:29:46.229Z",
+    "EC2InstanceId": "i-07f16a9d8ea5d2c54",
+    "StatusCode": "InProgress",
+    "StatusMessage": "",
+    "Details": {
+      "Subnet ID": "subnet-0926d4207c10484ea",
+      "Availability Zone": "us-east-1c"
+    },
+    "Cause": "At 2022-03-03T17:29:39Z a user request update of AutoScalingGroup constraints to min: 0, max: 1, desired: 0 changing the desired capacity from 1 to 0.  At 2022-03-03T17:29:46Z an instance was taken out of service in response to a difference between desired and actual capacity, shrinking the capacity from 1 to 0.  At 2022-03-03T17:29:46Z instance i-07f16a9d8ea5d2c54 was selected for termination.",
+    "AutoScalingGroupName": "DevelopmentAutoScalingGroup"
+  }
+}

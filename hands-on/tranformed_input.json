@@ -1,0 +1,4 @@
+{
+  "event": "$.detail-type",
+  "asg_name": "$.detail.AutoScalingGroupName"
+}
